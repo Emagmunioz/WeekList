@@ -38,4 +38,7 @@ public boolean existeDia(String dia) {
 public void ordenarDiasAlfabeticamente() {
     Collections.sort(diasSemana);
 }
+public void vaciarLista() {
+    diasSemana.clear();
+}
 }

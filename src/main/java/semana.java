@@ -35,4 +35,7 @@ public String obtenerDiaPorIndice(int indice) {
 public boolean existeDia(String dia) {
     return diasSemana.contains(dia);
 }
+public void ordenarDiasAlfabeticamente() {
+    Collections.sort(diasSemana);
+}
 }

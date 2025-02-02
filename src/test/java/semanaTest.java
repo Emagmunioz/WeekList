@@ -19,4 +19,10 @@ public class semanaTest {
         assertThat(dias, hasSize(7));
         assertThat(dias, containsInAnyOrder("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"));
     }  
+    @Test
+    public void testObtenerDiasSemana() {
+        List<String> dias = gestor.obtenerDiasSemana();
+        assertThat(dias, is(not(empty())));
+        assertThat(dias, hasSize(7));
+    }
 }

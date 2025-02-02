@@ -41,4 +41,10 @@ public class semanaTest {
         assertThat(gestor.obtenerDiaPorIndice(6), is("Domingo"));
         assertNull(gestor.obtenerDiaPorIndice(7)); 
     }
+    @Test
+    public void testExisteDia() {
+        assertThat(gestor.existeDia("Martes"), is(true));
+        assertThat(gestor.existeDia("Feriado"), is(false));
+    }
+
 }

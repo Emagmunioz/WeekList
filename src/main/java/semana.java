@@ -32,4 +32,7 @@ public String obtenerDiaPorIndice(int indice) {
     }
     return null;
 }
+public boolean existeDia(String dia) {
+    return diasSemana.contains(dia);
+}
 }

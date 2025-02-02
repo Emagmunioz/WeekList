@@ -25,4 +25,20 @@ public class semanaTest {
         assertThat(dias, is(not(empty())));
         assertThat(dias, hasSize(7));
     }
+    @Test
+    public void testObtenerLargoLista() {
+        assertThat(gestor.obtenerLargoLista(), is(7));
+    }
+    @Test
+    public void testEliminarDia() {
+        assertThat(gestor.eliminarDia("Lunes"), is(true));
+        assertThat(gestor.obtenerLargoLista(), is(6));
+        assertThat(gestor.obtenerDiasSemana(), not(hasItem("Lunes")));
+    }
+    @Test
+    public void testObtenerDiaPorIndice() {
+        assertThat(gestor.obtenerDiaPorIndice(0), is("Lunes"));
+        assertThat(gestor.obtenerDiaPorIndice(6), is("Domingo"));
+        assertNull(gestor.obtenerDiaPorIndice(7)); 
+    }
 }

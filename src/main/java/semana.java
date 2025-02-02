@@ -23,4 +23,7 @@ public List<String> obtenerDiasSemana() {
 public int obtenerLargoLista() {
     return diasSemana.size();
 }
+public boolean eliminarDia(String dia) {
+    return diasSemana.remove(dia);
+}
 }

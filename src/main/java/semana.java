@@ -26,4 +26,10 @@ public int obtenerLargoLista() {
 public boolean eliminarDia(String dia) {
     return diasSemana.remove(dia);
 }
+public String obtenerDiaPorIndice(int indice) {
+    if (indice >= 0 && indice < diasSemana.size()) {
+        return diasSemana.get(indice);
+    }
+    return null;
+}
 }
